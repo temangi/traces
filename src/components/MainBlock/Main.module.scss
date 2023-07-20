@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Indie Flower");
+
+.backgroundHome,
+.backgroundHome2,
+.backgroundHome3,
+.backgroundHome4,
+.backgroundTours,
+.backgroundAbout,
+.backgroundDestinations {
+  width: 100%;
+  height: 586px;
+  background: no-repeat center / cover;
+  display: flex;
+  justify-content: space-between;
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 204px;
+    }
+    p {
+      text-align: center;
+      font-family: "Indie Flower";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 104px;
+      line-height: 152px;
+      color: #ffffff;
+    }
+  }
+
+  .background__flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    .mainBtns {
+      border: 1px solid black;
+      text-align: center;
+      padding: 18px 65px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      backdrop-filter: blur(4px);
+      margin: 0 30px;
+      border-radius: 32px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      transition: 0.3s ease-in-out;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      &:hover {
+        background: #ffffff;
+        border: 1px solid #ffffff;
+        color: black;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.backgroundHome::before,
+.backgroundHome2::before,
+.backgroundHome3::before,
+.backgroundHome4::before,
+.backgroundTours::before,
+.backgroundAbout::before,
+.backgroundDestinations::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: no-repeat center / cover;
+  animation: imageAnimation 10s ease-in-out infinite;
+}
+
+.backgroundHome::before {
+  background-image: url(./assets/theBoys.jpg);
+  z-index: -2;
+}
+
+.backgroundHome2::before {
+  background-image: url(./assets/HOMELANDER.jpg);
+  z-index: -1;
+}
+
+.backgroundHome3::before {
+  background-image: url(./assets/queenMaeve.jpg);
+  z-index: -1;
+}
+
+.backgroundHome4::before {
+  background-image: url(./assets/soldierboy.jpg);
+  z-index: -1;
+}
+
+.backgroundTours::before {
+  background-image: url(./assets/tours.png);
+  z-index: -1;
+}
+
+.backgroundAbout::before {
+  background-image: url(./assets/about.png);
+  z-index: -1;
+}
+
+.backgroundDestinations::before {
+  background-image: url(./assets/destinations.png);
+  z-index: -1;
+  &.imageAnimation {
+    animation-duration: 12s;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1148px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundDestinations {
+    .titles {
+      p {
+        font-size: 94px;
+        line-height: 140px;
+      }
+      h1 {
+        font-size: 23px;
+        margin-top: 235px;
+      }
+    }
+    .background__flex {
+      .mainBtns {
+        padding: 16px 60px;
+        margin: 0 25px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1014px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    .titles {
+      p {
+        font-size: 85px;
+        line-height: 132px;
+      }
+      h1 {
+        font-size: 22px;
+        margin-top: 245px;
+      }
+    }
+    .background__flex {
+      .mainBtns {
+        padding: 13px 45px;
+        margin: 0 20px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+@media (max-width: 912px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    .titles {
+      p {
+        font-size: 75px;
+        line-height: 100px;
+      }
+      h1 {
+        font-size: 21px;
+      }
+    }
+    .background__flex {
+      margin-top: 40px;
+      .mainBtns {
+        padding: 16px 44px;
+        margin: 0 18px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    height: 283px;
+    .titles {
+      p {
+        font-size: 45px;
+        line-height: 65px;
+      }
+      h1 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 94px;
+      }
+    }
+    .background__flex {
+      .background__flex_el {
+        &:first-child {
+          display: none;
+        }
+      }
+      .mainBtns {
+        padding: 12px 38px;
+        margin: -4px 14px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    .titles {
+      p {
+        font-size: 43px;
+        line-height: 75px;
+      }
+    }
+    .background__flex {
+      .mainBtns {
+        margin: -10px 10px;
+      }
+    }
+  }
+}
+@media (max-width: 462px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    .titles {
+      p {
+        font-size: 38px;
+        line-height: 65px;
+      }
+    }
+    .background__flex {
+      .mainBtns {
+        margin: 0 8px;
+        padding: 12px 30px;
+        font-size: 11px;
+        line-height: 11px;
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    .titles {
+      p {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 10px;
+      }
+      h1 {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 130px;
+      }
+    }
+    .background__flex {
+      margin-top: 21px;
+      .mainBtns {
+        margin: 0 6px;
+        padding: 13px 35px;
+        font-size: 10px;
+        line-height: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 300px) {
+  .backgroundHome,
+  .backgroundHome2,
+  .backgroundHome3,
+  .backgroundHome4,
+  .backgroundTours,
+  .backgroundDestinations,
+  .backgroundAbout {
+    .titles {
+      p {
+        font-size: 25px;
+        line-height: 35px;
+        margin-top: 10px;
+      }
+    }
+    .mainBtns {
+      font-size: 10px;
+      line-height: 14px;
+      margin-top: 130px;
+    }
+    .background__flex {
+      margin-top: 26px;
+      .mainBtns {
+        margin: 0 6px;
+        padding: 10px 30px;
+        font-size: 9px;
+        line-height: 9px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.tour__card {
+  background: #ffffff;
+  position: relative;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  height: 417px;
+  width: 363px;
+  display: flex;
+  flex-direction: column;
+  .tour__day {
+    position: absolute;
+    width: 85px;
+    height: 66px;
+    left: 278px;
+    top: 0px;
+    background: #ffffff;
+    border-radius: 0px 3px 0px 32px;
+    b {
+      height: 100%;
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: #008060;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .card__content {
+    width: 100%;
+    padding: 15px 20px;
+    img {
+      height: 251px;
+      width: 363px;
+    }
+    b {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #868686;
+    }
+    h5 {
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #474747;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #dcdcdc;
+    }
+  }
+}

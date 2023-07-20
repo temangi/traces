@@ -1,0 +1,66 @@
+.filter {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dcdcdc;
+    .filter__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      color: #474747;
+      margin-left: 20px;
+      @media (max-width: 425px) {
+        font-size: 33px;
+      }
+    }
+  }
+  .filter__main {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    @media (max-width: 1525px) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+    }
+    .filter__buttons {
+      display: flex;
+      gap: 10px;
+      height: 60px;
+      align-items: center;
+      @media (min-width:1525px) {
+        width: 100%;
+      }
+    }
+    button {
+      width: 220px;
+      height: 50px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #ffffff;
+      @media (max-width:1525px) {
+        width: 190px;
+      }
+    }
+  }
+}

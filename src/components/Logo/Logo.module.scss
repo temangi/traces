@@ -1,0 +1,31 @@
+.logo {
+  width: 170px;
+  padding-right: 40px;
+  border-right: 1px solid #a9a9a9;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  @media (max-width: 840px) {
+    padding-right: 30px;
+  }
+  @media (max-width: 768px) {
+    border-right: none;
+    width: 50%;
+  }
+  .logo__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #474747;
+  }
+}
+@media (max-width: 350px) {
+  .logo {
+    .logo__title {
+      font-size: 15px;
+    }
+  }
+}

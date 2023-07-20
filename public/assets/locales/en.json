@@ -1,0 +1,20 @@
+{
+  "welcome": "Welcome to my app!",
+  "search": {
+    "placeholder": "Search tour"
+  },
+  "header": {
+    "home": "Home",
+    "tours": "Tours",
+    "destinations": "Destinations",
+    "about": "About Us",
+    "share": "Share Tours"
+  },
+  "main": {
+    "headline": "Welcome to Kyrgyz Traces",
+    "secondHeadLine": "Discover the Kyrgyzstan",
+    "firsthTitle": "Find your tours",
+    "secondTitle": "Share tours",
+    "thirdTitle": "Watch video"
+  }
+}

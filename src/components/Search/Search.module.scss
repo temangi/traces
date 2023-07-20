@@ -1,0 +1,37 @@
+.search {
+  width: 200px;
+  height: 36px;
+  background: #f2f2f2;
+  border: 1px solid #a9a9a9;
+  border-radius: 3px;
+  display: flex;
+  padding: 9px 20px;
+  justify-content: space-between;
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+    width: 70%;
+  }
+  img{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  @media (max-width: 1000px){
+        width: 150px;
+        input{
+            font-size: 13px;
+        }
+    }
+  @media (max-width: 768px){
+    width: 70%;
+    display: none;
+  }
+}

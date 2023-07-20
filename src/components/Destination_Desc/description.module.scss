@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.desc_wrapper {
+  background-color: #faf7ed;
+
+  div {
+    .title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 51px;
+      color: #474747;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      @include breackpoint(xm) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #474747;
+        padding-bottom: 15px;
+      }
+    }
+    .destination {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      color: #757575;
+      @include breackpoint(xm) {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #757575;
+      }
+    }
+  }
+}

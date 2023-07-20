@@ -1,0 +1,56 @@
+.allDest {
+  width: 100%;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .quantity {
+    position: absolute;
+    width: 85px;
+    height: 66px;
+    right: 0;
+    top: 0px;
+    background: #ffffff;
+    border-radius: 0px 3px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 15px;
+    gap: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #008060;
+  }
+  .area {
+    margin: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #868686;
+    }
+    h4 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #474747;
+    }
+  }
+}

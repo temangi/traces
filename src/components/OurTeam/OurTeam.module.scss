@@ -1,0 +1,52 @@
+.ourteam {
+  width: 100%;
+  background-color: #004c3f;
+  font-family: "Montserrat";
+  h1 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  hr {
+    border: 1px solid #dcdcdc;
+    opacity: 0.4;
+  }
+  .ourteam__slider {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  :global {
+    .slick-slide > div {
+      margin: 0 10px;
+    }
+    .slick-list {
+      margin: 0 -10px;
+    }
+  }
+}
+
+.prev__arrow {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.next__arrow {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media (max-width: 678px) {
+  .prev__arrow,
+  .next__arrow {
+    display: none;
+  }
+}

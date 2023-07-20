@@ -1,0 +1,136 @@
+.destinations {
+  width: 100%;
+  background-color: #004c3f;
+  font-family: "Montserrat", sans-serif;
+  hr {
+    border: 1px solid #dcdcdc;
+    opacity: 0.4;
+  }
+  .destinations__header {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    .header__content {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0 20px 0;
+      h1 {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 51px;
+        color: #ffffff;
+        margin-bottom: 15px;
+        @media (max-width:620px) {
+          margin-bottom: 10px;
+        }
+      }
+      p {
+        width: 523px;
+        height: 72px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+    }
+    .reviews__link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      padding-bottom: 20px;
+      a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &:hover {
+        img {
+          position: relative;
+          left: 3px;
+        }
+      }
+      img {
+        position: relative;
+        left: 0;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+  .destinations__slider {
+    padding: 40px 0 0 0;
+  }
+  :global {
+    .slick-slide > div {
+      margin: 0 10px;
+    }
+    .slick-list {
+      margin: 0 -10px;
+    }
+  }
+}
+
+.prev__arrow {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.next__arrow {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media (max-width: 840px) {
+  .destinations {
+    .destinations__header {
+      align-items: start;
+      .reviews__link {
+        padding: 35px 0 0 0;
+        a {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 678px) {
+  .destinations {
+    .destinations__header {
+      align-items: start;
+      .header__content {
+        h1 {
+          font-size: 24px;
+        }
+      }
+      .reviews__link {
+        a {
+          display: none;
+        }
+      }
+    }
+    .next__arrow,
+    .prev__arrow {
+      display: none;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .destinations {
+    .destinations__header {
+      .header__content {
+        p {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}

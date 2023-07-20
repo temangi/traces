@@ -1,0 +1,32 @@
+$dark-gray: #474747; //this color appears in all titles
+$blue-green: #008060; //text on components such as "Find your tour", when hovering buttons there. Basically this color when hovering.
+$gray: #868686; //Occurs in the descriptions of the component "Reviews, Our team, Destinations, find your tour",
+$dark-green: #004c3f; //occurs as a background on the "Destinations, out team" components, on the buttons of the "Reviews" component
+
+@mixin breackpoint($point) {
+  @if $point==xxl {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  } @else if $point==ms {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point==md {
+    @media (max-width: 997px) {
+      @content;
+    }
+  } @else if $point==sm {
+    @media (max-width: 776px) {
+      @content;
+    }
+  } @else if $point==xm {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $point==xs {
+    @media (max-width: 380px) {
+      @content;
+    }
+  }
+}

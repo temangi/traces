@@ -1,0 +1,35 @@
+.includes {
+  background: #004c3f;
+  .includes__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    color: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .includes__yes,.includes__not {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    gap: 15px 
+  }
+  main{
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  main,footer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
